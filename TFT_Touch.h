@@ -1,6 +1,7 @@
 /*
 
 Library for 2046 controller based TFT touch screen.
+Added TouchPoint and getTouch() Sept 14, 2025 Larry Coffey.
 
 Significantly modified by Rowboteer 22/11/15
 Renamed TFT_Touch
@@ -13,7 +14,17 @@ See original header text at end of file
 #define _TFT_Touch_H
 
 #include "Arduino.h"
-#include "Calibration.h"
+
+#define _RAWERR 10
+
+struct TouchPoint {
+    uint16_t x;
+    uint16_t y;
+    uint16_t xRaw;
+    uint16_t yRaw;
+    uint16_t zRaw;
+    boolean touched;
+};
 
 class TFT_Touch
 {
@@ -28,6 +39,8 @@ class TFT_Touch
   uint16_t Y(void);
   uint32_t Zone(void);
 
+  TouchPoint getTouch();
+  
   void setResolution(uint16_t xres, uint16_t yres);
   void setCal(uint16_t xmin, uint16_t xmax, uint16_t ymin, uint16_t ymax, uint16_t xres, uint16_t yres, boolean axis);//, boolean xflip, boolean yflip);
   void setRotation(byte rotation);
