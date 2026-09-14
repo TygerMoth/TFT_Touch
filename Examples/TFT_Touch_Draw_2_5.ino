@@ -2,7 +2,7 @@
   This is a simple paint sketch!
 
   Tested with a 2.8" ESP32-2432S028R (CYD) ILI9341 based display of 320 x 240 pixles
-  Adapted for Sept 14, 2026 update, TouchPoint getTouch() usage.
+  Adapted for Sept 14, 2026 update, TouchPoint getTouch() usage by Larry Coffey.
   
   Uses font 2 only
 
