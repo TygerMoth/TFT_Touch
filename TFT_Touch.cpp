@@ -1,6 +1,7 @@
 /*
 
 Library for 2046 controller based TFT touch screen.
+Added getTouch() Sept 14, 2026 Larry Coffey
 
 Significantly modified by Rowboteer 22/11/15
 Renamed TFT_Touch
@@ -283,6 +284,15 @@ void TFT_Touch::setRotation(byte rotation)
   }
 }
 
+// returns the TouchPoint as {x, y, xRaw, yRaw, zRaw , touched} Note: zRaw is a pseudo pressure (_hres + x + y)
+TouchPoint TFT_Touch::getTouch() {
+  if(Pressed()) {
+  int _zraw = _xcoord + _ycoord + _hres;
+  return TouchPoint{_xcoord, _ycoord, _xraw, _yraw, _zraw, true};
+  } else {
+  return TouchPoint{0, 0, 0, 0, 0, false};
+  }
+}
 
 // Original header
 
