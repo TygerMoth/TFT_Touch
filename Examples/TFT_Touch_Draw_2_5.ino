@@ -9,9 +9,9 @@
   The example will read the current state of the touch screen and output it to the serial
   port as raw X and Y coordinates, as the current position in pixels and a zone number.
 
-  >>>> YOU MUST CALIBRATE THE TOUCH SCREEN AND COPY THE SETTINGS TO LINE 48 OF THIS SKETCH <<<<
+  >>>> YOU MUST CALIBRATE THE TOUCH SCREEN AND COPY THE SETTINGS TO LINE 51 OF THIS SKETCH <<<<
 
-  >>>>        YOU MUST CHANGE THE PIN DEFINITION AT LINES 29-32 TO SUIT YOUR SETUP         <<<<
+  >>>>        YOU MUST CHANGE THE PIN DEFINITION AT LINES 31-34 TO SUIT YOUR SETUP         <<<<
 
   Created by Rowboteer: 22/11/15
 */
