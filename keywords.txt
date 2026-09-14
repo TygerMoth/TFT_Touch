@@ -7,6 +7,7 @@ RawY		KEYWORD2
 X		KEYWORD2
 Y		KEYWORD2
 Zone		KEYWORD2
+getTouch  KEYWORD2
 setResolution	KEYWORD2
 setCal		KEYWORD2
 setRotation	KEYWORD2
