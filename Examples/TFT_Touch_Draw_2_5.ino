@@ -1,8 +1,9 @@
 /*
   This is a simple paint sketch!
 
-  Tested with a 2.4" ILI9341 based display of 320 x 240 pixles
-
+  Tested with a 2.8" ESP32-2432S028R (CYD) ILI9341 based display of 320 x 240 pixles
+  Adapted for Sept 14, 2026 update, TouchPoint getTouch() usage.
+  
   Uses font 2 only
 
   The example will read the current state of the touch screen and output it to the serial
